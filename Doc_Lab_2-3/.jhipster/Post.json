@@ -1,0 +1,55 @@
+{
+    "name": "Post",
+    "fields": [
+        {
+            "fieldName": "photoUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "comment",
+            "otherEntityRelationshipName": "post",
+            "relationshipName": "comments"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "like",
+            "otherEntityRelationshipName": "post",
+            "relationshipName": "likedBy"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "hashtag",
+            "otherEntityRelationshipName": "post",
+            "relationshipName": "hashtags"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "instagramUser",
+            "otherEntityRelationshipName": "posts",
+            "relationshipName": "users",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200513210200",
+    "entityTableName": "post",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

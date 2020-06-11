@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.bilous.instagram"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "instagram",
+    "packageName": "com.bilous.instagram",
+    "packageFolder": "com/bilous/instagram",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YmQ1OWZiNTYxYjY0YTYwYmVmMWI3ZTJkMWIxYjAzYzUxNTEwYWNiYmJiZmQ0YjhhMWM1YzM2OTJmMDYwZDU3NTJjOTBkM2U1Y2ZhYmU2YmVlYjRjM2FmNGUyYTk4ZTIyZGM4MjczNDdkMzQ1Zjg1OGY1NzE4N2E2NjUzZmQyNDE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1589403014032,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

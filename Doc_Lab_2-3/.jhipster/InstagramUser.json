@@ -1,0 +1,62 @@
+{
+    "name": "InstagramUser",
+    "fields": [
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "age",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "sex",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "like",
+            "otherEntityRelationshipName": "user",
+            "relationshipName": "likes"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "post",
+            "otherEntityRelationshipName": "users",
+            "relationshipName": "posts"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "followerFollowing",
+            "otherEntityRelationshipName": "following",
+            "relationshipName": "followers"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "followerFollowing",
+            "otherEntityRelationshipName": "followedBy",
+            "relationshipName": "following"
+        }
+    ],
+    "changelogDate": "20200513210100",
+    "entityTableName": "instagram_user",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

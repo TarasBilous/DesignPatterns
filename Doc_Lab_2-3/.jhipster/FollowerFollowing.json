@@ -1,0 +1,36 @@
+{
+    "name": "FollowerFollowing",
+    "fields": [
+        {
+            "fieldName": "canFollow",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "instagramUser",
+            "otherEntityRelationshipName": "followers",
+            "relationshipName": "following",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "instagramUser",
+            "otherEntityRelationshipName": "following",
+            "relationshipName": "followedBy",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200513210500",
+    "entityTableName": "follower_following",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
